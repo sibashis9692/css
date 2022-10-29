@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z_index</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            display: inline-block;
+            margin: 10px;
+        }
+        header{
+            background-color: black;
+            color: white;
+            position: sticky;
+            top: 0;   /* Here hader was not effected when you scroll*/
+        }
+        .container1{
+            height: 44444px;
+            width: 50vw;
+            background-color: aqua;
+            margin: auto;
+
+            z-index: 1; /* This is have 1 z index so it show in the front but when the z index is less then it is not show in front .this time it show which have more z_index*/
+        }
+        .box1{
+            background-color: red;
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </header>
+    <div class="container1">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat delectus sint omnis, doloremque impedit nesciunt quo, dolore et at laborum minima temporibus mollitia a nulla expedita quas quis similique aperiam, excepturi magni voluptas id!
+        <div class="box1">
+            Lorem ipsum dolor sit amet.
+        </div>
+    </div>
+</body>
+</html>

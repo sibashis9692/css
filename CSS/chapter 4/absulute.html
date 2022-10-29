@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absulute</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container1{
+            height: 50vh;
+            width: 50vw;
+            background-color: aqua;
+            margin: auto;
+            position: relative;
+        }
+        .box1{
+            background-color: red;
+            height: 200px;
+            width: 200px;
+            position: absolute;  /*when you do postion absolute then he check the can my parent was non static. if the parent was static then it move whole screen. if the parent was non static then the box1 is move under his parent;     ---> Here the container1 is the first Non static parent of box1.  but if container1 is not non static then the box was move in whole screen (But if you write postion: relative in container1 then the box1 is move under the container1*/    
+            right: 0px;
+        }
+        .box2{
+            background-color: brown;
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat delectus sint omnis, doloremque impedit nesciunt quo, dolore et at laborum minima temporibus mollitia a nulla expedita quas quis similique aperiam, excepturi magni voluptas id!
+        <div class="box1">
+            Lorem ipsum dolor sit amet.
+        </div>
+        <div class="box2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, sed!
+        </div>
+    </div>
+</body>
+</html>

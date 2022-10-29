@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container1{
+            height: 44444px;
+            width: 50vw;
+            background-color: aqua;
+            margin: auto;
+            position: relative;
+        }
+        .box1{
+            background-color: red;
+            height: 200px;
+            width: 200px;
+            position: fixed;  /*when you do postion fixed then it is fixed at any side you want if you scroll then it is not effected (---->   This is used in Chart with as logo)*/    
+            right: 0px;  /* if you write right then it is sift to the rigth and if you write left it sift to left*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat delectus sint omnis, doloremque impedit nesciunt quo, dolore et at laborum minima temporibus mollitia a nulla expedita quas quis similique aperiam, excepturi magni voluptas id!
+        <div class="box1">
+            Lorem ipsum dolor sit amet.
+        </div>
+        <div class="box2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, sed!
+        </div>
+    </div>
+</body>
+</html>

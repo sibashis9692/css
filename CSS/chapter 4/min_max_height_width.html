@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>min_max</title>
+    <style>
+        .container1{
+            background-color: red;
+            min-height: 20vh;
+            /* height: 4vh;  This is not work because we set the minimum height is 20vh. */
+            max-height: 50vh;
+            /* height: 100vh; This is also not working because we set the maxmimam height is 50vh */
+
+            height: 40vh; /* This is work because the height is not less from min height and not big from max height*/
+
+            width: 50vw;
+        }
+
+        .container2{
+            background-color: blue;
+
+            max-width: 50vw;
+            min-width: 20vw;
+
+            /* width: 100vw; This is also not working because 100 > max width */
+            /* width: 10vw; This is also not working because 10 < min width */
+            height: 50vh;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container1">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil provident odio debitis distinctio veritatis, doloremque suscipit, ipsum cum est magnam eius? Totam mollitia dolorum repellendus, asperiores velit a quasi quos!
+    </div>
+    <div class="container2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, iste nesciunt ea similique iure, ex deleniti culpa sunt delectus reiciendis alias cupiditate cumque architecto vero eligendi. Incidunt, iure similique cumque veniam ut doloremque vero ad. Tenetur aliquam ullam, temporibus eum dignissimos molestias qui consectetur veritatis amet illum labore fugit id?
+    </div>
+</body>
+</html>

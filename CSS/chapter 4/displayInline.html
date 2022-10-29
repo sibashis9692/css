@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is the displayInline</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            background-color: red;
+            height: 300px;
+            width: 200px;
+            display: inline;
+            /* margin: 32px 30px;
+            padding: 39px 39px; in display inline the top and bottom of margin is not give But left and right is give */
+        }
+        .container2{
+            background-color: aqua;
+            margin-left: 5px; /* This line is for some gaph between container and container2*/
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        Lorem ipsum dolor sit
+    </div>
+    <div class="container2">
+        Lorem ipsum dolor sit amet consectetur.
+    </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-color: aqua;
+        }
+        .box{
+            height: 250px;
+            width: 250px;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            /* This is for animate the box */
+
+            /* animation-name: withAnimation;  This is the name of the animation */
+
+
+            /* animation-duration: .1s;         This is the time for complete the animation */
+
+
+            /* animation-delay: 1s;            This is the time for dealy */
+
+
+            /* animation-iteration-count: infinite; This is for which time the animation is work */
+
+            /* animation-direction: alternate-reverse;  This is for animaiton direction */
+
+            /* animation-timing-function: ease-in-out;   */
+
+            animation: withAnimation 3s ease-in-out 1s infinite alternate;
+        }
+        img{
+            height: 250px;
+            width: 250px;
+            animation: withAnimation 3s ease-in-out 1s infinite alternate;
+        }
+
+        @keyframes withAnimation {
+            from{
+                width: 250px;
+                height: 250px;
+            }
+            to{
+                width: 100vw;
+                height: 100vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="/jeshoots-com-XzoSKULTDWI-unsplash.jpg" alt="image" height="250px" width="250px">
+        </div>
+    </div>
+</body>
+</html>
